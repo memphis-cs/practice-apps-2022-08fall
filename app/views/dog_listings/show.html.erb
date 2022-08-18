@@ -1,0 +1,29 @@
+<h1 class="my-3"><%= @dog_listing.name %></h1>
+
+<p>
+  <strong>Breed:</strong>
+  <%= @dog_listing.breed %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @dog_listing.sex %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @dog_listing.weight %> lbs
+</p>
+
+<p>
+  <strong>Price:</strong>
+  $<%= @dog_listing.price %>
+</p>
+
+<p>
+  <strong>Seller email:</strong>
+  <%= link_to @dog_listing.seller_email, "mailto:#{@dog_listing.seller_email}" %>
+</p>
+
+<%= link_to 'Edit', edit_dog_listing_path(@dog_listing), class: 'btn btn-primary' %>
+<%= link_to 'Back', dog_listings_path, class: 'btn btn-primary' %>

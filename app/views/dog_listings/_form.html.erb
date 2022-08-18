@@ -1,0 +1,10 @@
+<%= bootstrap_form_with model: dog_listing do |form| %>
+    <%= form.text_field :name %>
+    <%= form.text_field :breed %>
+    <%= form.text_field :sex %>
+    <%= form.number_field :weight %>
+    <%= form.number_field :price %>
+    <%= form.text_field :seller_email %>
+
+    <%= form.submit %>
+<% end %>
