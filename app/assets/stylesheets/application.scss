@@ -10,6 +10,19 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "darkly/variables";
+@import "bootstrap";
+@import "darkly/bootswatch";
+
+@import "rails_bootstrap_forms";
+
+#main {
+  margin-top: 20px;
+}
+
+.alert-dismissible {
+  padding-left: $alert-dismissible-padding-r;
+}
