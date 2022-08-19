@@ -1,0 +1,18 @@
+# == Schema Information
+#
+# Table name: tracks
+#
+#  id         :bigint           not null, primary key
+#  length     :integer
+#  title      :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+one:
+  title: MyString
+  length: 1
+
+two:
+  title: MyString
+  length: 1

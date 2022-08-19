@@ -1,0 +1,13 @@
+<h1>Editing Album</h1>
+
+<%= bootstrap_form_with model: @album, url: album_path(@album), method: :patch, local: true do |form| %>
+
+  <%= form.text_field :title %>
+  <%= form.text_field :artist %>
+  <%= form.submit %>
+
+<% end %>
+
+<p class="border-top border-light pt-2 mt-4">
+  <%= link_to 'Back', albums_path %>
+</p>
