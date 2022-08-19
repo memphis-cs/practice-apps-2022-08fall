@@ -1,0 +1,13 @@
+<h1>New Team</h1>
+
+<%= bootstrap_form_with model: @team, url: teams_path, method: :post, local: true do |form| %>
+
+  <%= form.text_field :name %>
+  <%= form.text_field :home_city %>
+  <%= form.submit nil, class: 'btn btn-primary' %>
+
+<% end %>
+
+<p>
+  <%= link_to 'Back', teams_path, class: 'btn btn-secondary' %>
+</p>
