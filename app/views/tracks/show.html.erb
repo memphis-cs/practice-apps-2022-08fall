@@ -1,0 +1,10 @@
+<h1>#<%= @track.order_number %> <%= @track.title %></h1>
+
+<ul>
+  <li>Artist: <%= @track.artist ? @track.artist : '(no given)' %></li>
+  <li>Length: <%= @track.length / 60 %>:<%= "%02d" % (@track.length % 60) %></li>
+</ul>
+
+<p>
+  <%= link_to 'Home', tracks_path %>
+</p>
