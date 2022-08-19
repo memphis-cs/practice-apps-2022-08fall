@@ -1,0 +1,24 @@
+# == Schema Information
+#
+# Table name: video_games
+#
+#  id         :bigint           not null, primary key
+#  genre      :string
+#  publisher  :string
+#  title      :string
+#  year       :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+one:
+  title: MyString
+  year: 1
+  publisher: MyString
+  genre: MyString
+
+two:
+  title: MyString
+  year: 1
+  publisher: MyString
+  genre: MyString
