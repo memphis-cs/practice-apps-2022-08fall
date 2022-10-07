@@ -70,3 +70,22 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+#
+#  Custom Gems
+#
+
+group :development, :test do
+  # Disconnects all connections to PostgreSQL db when running rails db:reset
+  gem 'pgreset'
+
+  # Adds model attributes/routes to top of model files/routes file
+  gem 'annotate'
+end
+
+# Preset CSS styles and themes
+gem 'bootstrap', '~> 5.2.0'
+gem 'bootswatch', github: 'thomaspark/bootswatch'
+
+# Bootstrap styled forms
+gem 'bootstrap_form', '~> 5.1'
