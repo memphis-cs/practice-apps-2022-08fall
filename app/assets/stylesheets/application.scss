@@ -13,13 +13,13 @@
  */
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
-@import "yeti/variables";
+@import "simplex/variables";
 @import "bootstrap";
-@import "yeti/bootswatch";
+@import "simplex/bootswatch";
 
 @import "rails_bootstrap_forms";
 
-main {
+#main {
   margin-top: 20px;
 }
 

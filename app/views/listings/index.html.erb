@@ -1,0 +1,37 @@
+<h1>Free Stuff!</h1>
+
+<div class="table-responsive">
+  <table class="table">
+
+    <thead class="table-primary">
+      <tr>
+        <th>Listing</th>
+        <th>Still Available?</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @listings.each do |listing| %>
+        <tr>
+          <td><%= link_to listing.name, listing_path(listing) %></td>
+          <td>
+            <% if listing.available %>
+              <span class="text-success">✓ Yes!</span>
+            <% else %>
+              <span class="text-danger">✕ No</span>
+            <% end %>
+          </td>
+          <td>
+            <%= button_to 'Destroy', listing_path(listing), method: :delete, data: { turbo: false }, class: 'btn btn-outline-danger btn-sm', form: { class: 'd-inline' } %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+
+  </table>
+</div>
+
+<p>
+  <%= link_to 'New Listing', new_listing_path, class: 'btn btn-primary' %>
+</p>
