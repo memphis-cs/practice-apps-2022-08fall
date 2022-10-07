@@ -1,0 +1,11 @@
+<h1 class="my-4"><%= @blog_post.title %></h1>
+
+<p>
+  By TODO_AUTHOR
+</p>
+
+<%= simple_format(@blog_post.body) %>
+
+<p class="mt-4">
+  <%= link_to 'Back', blog_posts_path, class: 'btn btn-outline-primary' %>
+</p>
